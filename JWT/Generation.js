@@ -1,7 +1,7 @@
-// JWT/Generation.js
+
 
 const jwt = require('jsonwebtoken');
-require('dotenv').config();  // для роботи з .env файлами
+require('dotenv').config();
 
 const generateToken = (userId) => {
     const payload = { userId };
@@ -10,4 +10,4 @@ const generateToken = (userId) => {
     return token;
 };
 
-module.exports = { generateToken };  // Експортуємо як об'єкт
+module.exports = { generateToken };
